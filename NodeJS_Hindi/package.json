@@ -1,0 +1,17 @@
+{
+  "name": "sourav_pkg",
+  "version": "1.0.0",
+  "description": "This is my first nodejs pkg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sourav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

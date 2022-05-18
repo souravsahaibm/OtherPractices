@@ -1,0 +1,18 @@
+<h3>Add Todo List</h3>
+<div class="my-3">
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="first_name" class="form-label">First Name</label>
+            <input type="text" class="form-control" [(ngModel)]="first_name" name="first_name" id="first_name">
+        </div>
+        <div class="mb-3">
+            <label for="surname" class="form-label">Surname</label>
+            <input type="text" class="form-control" [(ngModel)]="surname" name="surname" id="surname">
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="text" class="form-control" [(ngModel)]="age" name="age" id="age">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Todo</button>
+    </form>
+</div>

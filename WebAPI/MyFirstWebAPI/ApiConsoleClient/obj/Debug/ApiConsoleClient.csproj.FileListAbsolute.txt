@@ -1,0 +1,7 @@
+D:\SOURAV WORK\After IBM\Practice\WebAPI\MyFirstWebAPI\ApiConsoleClient\obj\Debug\ApiConsoleClient.csprojAssemblyReference.cache
+D:\SOURAV WORK\After IBM\Practice\WebAPI\MyFirstWebAPI\ApiConsoleClient\obj\Debug\ApiConsoleClient.csproj.CoreCompileInputs.cache
+D:\SOURAV WORK\After IBM\Practice\WebAPI\MyFirstWebAPI\ApiConsoleClient\bin\Debug\ApiConsoleClient.exe.config
+D:\SOURAV WORK\After IBM\Practice\WebAPI\MyFirstWebAPI\ApiConsoleClient\bin\Debug\ApiConsoleClient.exe
+D:\SOURAV WORK\After IBM\Practice\WebAPI\MyFirstWebAPI\ApiConsoleClient\bin\Debug\ApiConsoleClient.pdb
+D:\SOURAV WORK\After IBM\Practice\WebAPI\MyFirstWebAPI\ApiConsoleClient\obj\Debug\ApiConsoleClient.exe
+D:\SOURAV WORK\After IBM\Practice\WebAPI\MyFirstWebAPI\ApiConsoleClient\obj\Debug\ApiConsoleClient.pdb
