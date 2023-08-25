@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="header">This is a JS DOM program</h2>
+    <p id="p1">Paragraph1</p>
+    <p id="p2">Paragraph2</p>
+    <p id="p3" class="para">Paragraph3</p>
+    <p id="p4" class="para">Paragraph4</p>
+
+    <ul>
+        <li>Like</li>
+        <li>Share</li>
+        <li>Subscribe</li>
+    </ul>
+    <div id="divone">
+        This is a content of Div One.
+        <button onclick="myFunc('divone')">Print Div One</button>
+    </div>
+    <div id="divtwo">
+        This is a content of Div Two.
+        <button onclick="myFunc('divtwo')">Print Div Two</button>
+    </div>
+    <div>
+        <button onclick="printWholePage()">Print Whole Page</button>
+    </div><br>
+    <button onclick="youtube()">Redirect to YouTube</button>
+    <br><br>
+    <div>
+        <button onmousedown="mouseeventFunc()">Mouse Down</button>
+        <button onmouseenter="mouseeventFunc()">Mouse Enter</button>
+        <button onmouseleave="mouseeventFunc()">Mouse Leave</button>
+        <button onmouseout="mouseeventFunc()">Mouse Out</button>
+        <button onmouseup="mouseeventFunc()">Mouse Up</button>
+        <button onmouseover="mouseeventFunc()">Mouse Over</button>
+        <button ondblclick="mouseeventFunc()">Mouse DoubleClick</button>
+    </div>
+    <br><br>
+    <div>
+        <button onkeydown="keyeventFunc()">Key Down</button>
+        <button onkeypress="keyeventFunc()">Key Press</button>
+        <button onkeyup="keyeventFunc()">Key Up</button>
+    </div>
+    <div>
+        <br>
+        <button onclick="clearInterval(clock)">Stop Clock</button>
+        <button onclick="clearInterval(timeout)">Stop Alert</button>
+        <p id="dynClock"></p>
+    </div> 
+    <!-- <script src="JS_Array.js"></script>  -->
+    <!-- <script src="JS_DOM.js"></script> -->
+    <!-- <script src="window_Obj.js"></script> -->
+    <!-- <script src="Events.js"></script> -->
+    <!-- <script src="Date_Time.js"></script> -->
+    <!-- <script src="Eval.js"></script> -->
+    <script src="Objects.js"></script>
+</body>
+
+</html>

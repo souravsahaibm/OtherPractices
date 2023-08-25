@@ -1,0 +1,11 @@
+var X = 10;
+var Y = 20;
+var a = eval("X+Y");
+console.log('Value of a:', a);
+var b = eval("2*2");
+console.log('Value of b:', b);
+var sum = eval("a+b");
+console.log('Value of sum:', sum);
+console.log('Compare Values', eval("2*2") === eval(b));
+var statement = "This is a statement in eval function";
+console.log('Excute Statement in eval()', eval("statement"));
