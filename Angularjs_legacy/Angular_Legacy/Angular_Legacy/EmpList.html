@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head ng-app="EmpData">
+    <meta charset="utf-8" />
+    <title>Call webapi from Html-AngularJS</title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/WebApi.js"></script>
+</head>
+<body ng-controller="EmpController">
+    <table border="1">
+        <thead>
+        <th>Employees</th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="emp in emplist"></tr>
+        <td>{{emp}}</td>
+        </tbody>
+    </table>
+</body>
+</html>

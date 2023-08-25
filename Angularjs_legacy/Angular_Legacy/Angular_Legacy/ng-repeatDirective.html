@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyModule">
+
+<head>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/ng-repeatDirective.js"></script>
+</head>
+
+<body ng-controller="MyController">
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in employees">
+                <td>{{emp.FirstName}}</td>
+                <td>{{emp.LastName}}</td>
+                <td>{{emp.Gender}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br /><br />
+    <h3>Nested list using ng-repeat directive</h3>
+    <ul>
+        <li ng-repeat="country in countries" ng-init="parentIndex=$index">
+            {{country.name}} - Index={{$index}}
+            <ul>
+                <li ng-repeat="city in country.cities">
+                    <!-- {{city.name}} - ParentIndex - {{$parent.$index}} - Index={{$index}} -->
+                    {{city.name}} - ParentIndex - {{parentIndex}} - Index={{$index}}
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

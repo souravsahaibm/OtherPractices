@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyModule">
+
+<head>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/ng-repeatDirective.js"></script>
+    <link href="../Styles/style.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="MyController">
+    Select View : <select ng-model="selectView">
+        <option value="EmpTable.html">Employee Table</option>
+        <option value="CountryList.html">Country List</option>
+    </select>
+    <br /><br />
+    <div ng-include="selectView"></div>
+</body>
+
+</html>

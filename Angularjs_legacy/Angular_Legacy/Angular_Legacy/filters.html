@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FilterModule">
+
+<head>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/filters.js"></script>
+    <link href="Styles/style.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="FilterController">
+    No of Rows : <input type="number" step="1" max="4" min="0" ng-model="rowLimit" />
+    Sort By : <select ng-model="sortColumn">
+        <option value="Name">Name ASC</option>
+        <option value="-Name">Name DSC</option>
+        <option value="DOB">DOB ASC</option>
+        <option value="Salary">Salary ASC</option>
+        <option value="-Salary">Salary DSC</option>
+    </select>
+    <!--Search By : <select ng-model="searchCol" ng-options="e for e in headers">
+        <option value=""></option>
+    </select>
+    <input type="text" placeholder="search employees" ng-model="searchText[searchCol]" />-->
+    <input type="checkbox" ng-model="exactMatch" />
+    <br /><br />
+    <input type="text" placeholder="search with name & gender" ng-model="searchText" />
+
+    <input type="checkbox" ng-model="hideSalary" /> Hide Salary
+    <input type="checkbox" ng-model="checked" /> Hide Sourav from Table Data
+    <br /><br />
+    <table>
+        <thead>
+            <th ng-click="sortData('Name')">Name <div ng-class="getSortClass('Name')"></div>
+            </th>
+            <th ng-click="sortData('DOB')">DOB <div ng-class="getSortClass('DOB')"></div>
+            </th>
+            <th ng-click="sortData('Gender')">Gender <div ng-class="getSortClass('Gender')"></div>
+            </th>
+            <th ng-click="sortData('Salary')" ng-hide="hideSalary">Salary(Number) <div
+                    ng-class="getSortClass('Salary')"></div>
+            </th>
+            <th ng-click="sortData('Salary')" ng-show="hideSalary">Salary(Number) <div
+                    ng-class="getSortClass('Salary')"></div>
+            </th>
+            <th ng-click="sortData('Salary')">Salary(Currency) <div ng-class="getSortClass('Salary')"></div>
+            </th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in employees | limitTo:rowLimit | orderBy:sortColumn:reverseSort | filter:search | filter:hide">
+                <td >{{emp.Name | uppercase}} </td>
+                <td>{{emp.DOB | date:'dd-MM-yy'}}</td>
+                <td>{{emp.Gender | lowercase | customFilter}}</td>
+                <td ng-hide="hideSalary">{{emp.Salary | number:2}}</td>
+                <td ng-show="hideSalary">#####</td>
+                <td>{{emp.Salary | currency:"Rs ":1}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

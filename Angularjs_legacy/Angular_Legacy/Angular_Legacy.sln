@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular_Legacy", "Angular_Legacy\Angular_Legacy.csproj", "{FE9AA674-B913-4AD3-84B5-62ECA586315B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE9AA674-B913-4AD3-84B5-62ECA586315B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9AA674-B913-4AD3-84B5-62ECA586315B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9AA674-B913-4AD3-84B5-62ECA586315B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9AA674-B913-4AD3-84B5-62ECA586315B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCEFF258-7985-4A29-B419-E56BB12F971F}
+	EndGlobalSection
+EndGlobal

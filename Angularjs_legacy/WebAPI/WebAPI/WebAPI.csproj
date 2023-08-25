@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\EmpList.html" />
+    <None Include="wwwroot\Scripts\angular.min.js" />
+    <None Include="wwwroot\Scripts\WebApi.js" />
+  </ItemGroup>
+
+
+</Project>

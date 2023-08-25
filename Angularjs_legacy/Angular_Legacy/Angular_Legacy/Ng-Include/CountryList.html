@@ -1,0 +1,12 @@
+<h3>Nested list using ng-repeat directive</h3>
+    <ul>
+        <li ng-repeat="country in countries" ng-init="parentIndex=$index">
+            {{country.name}} - Index={{$index}}
+            <ul>
+                <li ng-repeat="city in country.cities">
+                    <!-- {{city.name}} - ParentIndex - {{$parent.$index}} - Index={{$index}} -->
+                    {{city.name}} - Parent Index - {{parentIndex}} - Index={{$index}}
+                </li>
+            </ul>
+        </li>
+    </ul>

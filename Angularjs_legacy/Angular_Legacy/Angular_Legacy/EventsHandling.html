@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="EventModule">
+<head>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/EventsHandling.js"></script>
+</head>
+<body ng-controller="EventController">
+    <table>
+        <thead>
+            <th>TechName</th>
+            <th>Likes</th>
+            <th>DisLikes</th>
+            <th>Likes/Dislikes></th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="technology in technologies">
+                <td>{{technology.Name}}</td>
+                <td>{{technology.Like}}</td>
+                <td>{{technology.DisLike}}</td>
+                <td><input type="button" value="Like" ng-click="LikeIncrement(technology)"/>
+                    <input type="button" value="DisLike" ng-click="DisLikeIncrement(technology)"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

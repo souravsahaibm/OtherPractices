@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="emp in employees">
+            <td>{{emp.FirstName | uppercase}}</td>
+            <td>{{emp.LastName | uppercase}}</td>
+            <td>{{emp.Gender | lowercase}}</td>
+        </tr>
+    </tbody>
+</table>

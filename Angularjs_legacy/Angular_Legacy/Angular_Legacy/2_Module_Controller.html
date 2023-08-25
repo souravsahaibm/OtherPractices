@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/module_controller.js"></script>
+</head>
+
+<body ng-app="MyModule">
+    <div ng-controller="firstController">
+        $Scope object value is : {{message}} </br></br>
+        <div>First Name : {{employee.FirstName}}</div>
+        <div>Last Name : {{employee.LastName}}</div>
+        <div>Gender : {{employee.Gender}}</div>
+        <div><img ng-src="{{employee.MyImg}}" style="height:100px;width:100px;" /></div>
+    </div>
+    </div>
+</body>
+
+</html>
